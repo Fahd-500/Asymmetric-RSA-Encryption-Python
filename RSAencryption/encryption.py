@@ -12,7 +12,7 @@ with open("public.pem", "rb") as f:
 with open("private.pem", "rb") as f:
     private_key = rsa.PrivateKey.load_pkcs1(f.read())
 
-# this is the message that we will encrypt and later decrypt
+# this is the message that we will be encrypted and later decrypted
 message = "this is message was encrypted"
 
 # encryptes the message using the public key 
