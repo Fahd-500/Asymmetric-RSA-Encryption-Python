@@ -5,7 +5,6 @@ with open("public.pem", "rb") as f:
     
     #This method takes the raw byte data (in PKCS#1 format) 
     #and converts it back into a usable RSA public key object, 
-    #which is stored in the public_key variable to be used in encryption
     public_key = rsa.PublicKey.load_pkcs1(f.read())
 
 
